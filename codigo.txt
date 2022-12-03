@@ -1,18 +1,32 @@
-1.adsad
-2.push na master
-3.novo push
-4. mais novo push
-5. este arquivo foi para a branch diego
+************** Como inserir e remover usuario GIT **************
+git config --global user.name "dpaiane"
+git config --global user.email "diegocardoso@gmail.com"
+git config credential.user.name "dpaiane"
 
-Para trazer de uma branch para a master
+************** Como inserir repositorio local *************
+git init
+git add .
+git status
+git commit -m "descricao"
 
-git checkout -b tarefa/diego 		--> "criei uma branch e fui pra ela"
+**************** Como inserir repositorio remoto ************
+git remote -v
+git remote add origin "linck"
+
+************* Como criar uma branch  **************
+git checkout -b tarefa/diego		-->cria o branch e vai pra ela
+git checkout tarefa/diego		-->alterna entre as branchs
+
+************ Para trazer de uma branch para a master ***********
+git checkout -b tarefa/diego 		-->criei uma branch e fui pra ela
 git add .				-->adiciona o arquivo
 git commit -m "comit na branch diego" 	-->comita o arquivo
 git push -u origin tarefa/diego		-->publiquei na tarefa/diego
 git checkout master			-->volto pra master
 git merge tarefa/diego			-->faço o merge do arquivo da branch para master
 git push -u origin master		-->publiquei a branch na master
+
+
 
 
 
